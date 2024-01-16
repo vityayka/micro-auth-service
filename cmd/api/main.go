@@ -24,7 +24,7 @@ func main() {
 
 	db, err := openDB(os.Getenv("DSN"))
 	if err != nil {
-		panic(err)
+		log.Panic(err)
 	}
 
 	app := Config{
